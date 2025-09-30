@@ -11,19 +11,17 @@
 
         <!--Rows for card sections-->
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40"/>
             <!--Heading-->
-            <RowDefinition Height="1.4*"/>
+            <RowDefinition Height="230"/>
             <!--Image-->
             <RowDefinition Height="Auto"/>
             <!--Sub info-->
-            <RowDefinition Height="*"/>
-            <!--Move 1-->
-            <RowDefinition Height="*"/>
-            <!--Move 2-->
             <RowDefinition Height="Auto"/>
+            <!--Moves-->
+            <RowDefinition Height="*"/>
             <!--Weak Resist Retreat-->
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <!--Buttons-->
         </Grid.RowDefinitions>
 
@@ -38,7 +36,7 @@
         </Grid.ColumnDefinitions>
 
         <!--Heading Section-->
-        <Grid Grid.Row="0" Grid.ColumnSpan="3" Margin="6">
+        <Grid Grid.Row="0" Grid.ColumnSpan="3" Margin="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <!--Name-->
@@ -64,24 +62,30 @@
         </Grid>
 
         <!--Image Row 1-->
-        <Border Grid.Row="1" Grid.ColumnSpan="3" BorderBrush="Gray" BorderThickness="1"  Padding="5" Background="LightGray">
-            <Image Margin="-1,-1,-1,-1" Source="C:\Users\grigo\Desktop\C#\PokemonWPF\Image1.png" Stretch="Fill"/>
+        <Border Grid.Row="1" Grid.ColumnSpan="3" BorderBrush="Gray" BorderThickness="1"  Padding="5" Background="LightGray" Margin="12,0,12,15" Grid.RowSpan="2">
+            <Image Margin="-1,-1,-1,-1" Source="C:\Users\grigo\Desktop\C#\PokemonWPF\Image1.png" Stretch="Fill" />
         </Border>
 
         <!--Sub Info row 2-->
-        <Border Grid.Row="2" Grid.ColumnSpan="3" BorderBrush="DarkGray" Background="LightGray" BorderThickness="3" Margin="5">
-            <TextBlock Text="NO. 0111  Spike Pokemon  HT:3'3'  WT:253.5 lbs." FontSize="12" HorizontalAlignment="Center"/>
+        <Border Grid.Row="2" Grid.ColumnSpan="3" BorderBrush="DarkGray" Background="LightGray" BorderThickness="3" Margin="1">
+            <TextBlock Text="NO. 0111  Spike Pokemon  HT:3'3'  WT:253.5 lbs." FontSize="8" HorizontalAlignment="Center"/>
         </Border>
 
-        <!--Move 1 row 3-->
-        <Grid Grid.Row="3" Grid.ColumnSpan="3" Margin="6" Background="Gold">
+
+        <!--Moves row 3-->
+        <Grid Grid.Row="3" Grid.ColumnSpan="3" Margin="5,0,5,0" Background="Gold" VerticalAlignment="Center" >
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <!--Move Name-->
+                <!--Move1 Name-->
                 <RowDefinition Height="Auto"/>
-                <!--Move Description-->
+                <!--Move1 Description-->
+                <RowDefinition Height="Auto"/>
+                <!--Move2 Name-->
             </Grid.RowDefinitions>
+
             <Grid.ColumnDefinitions>
+
                 <ColumnDefinition Width="Auto"/>
                 <!--Icon-->
                 <ColumnDefinition Width="*"/>
@@ -90,56 +94,40 @@
                 <!--Damage-->
             </Grid.ColumnDefinitions>
 
-            <!--Heading row-->
-            <Border Grid.Row="0" Grid.Column="0" Margin="2" Padding="5">
+            <!--Move 1 Heading row-->
+            <Border Grid.Row="0" Grid.Column="0" Margin="1,25,1,0" Padding="5">
                 <TextBlock Text="() ()" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Border>
 
-            <Border Grid.Row="0" Grid.Column="1" Margin="2" Padding="5">
+            <Border Grid.Row="0" Grid.Column="1" Margin="1,25,1,0" Padding="5">
                 <TextBlock Text="Push Down" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Border>
 
-            <Border Grid.Row="0" Grid.Column="2" Margin="2" Padding="5">
+            <Border Grid.Row="0" Grid.Column="2" Margin="1,25,1,0" Padding="5">
                 <TextBlock Text="20" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Border>
 
             <!--Description row-->
-            <Border Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="0" Margin="2" Padding="5">
-                <TextBlock Text="Switch out your opponent's Active Pokemon to the Bench. (Your opponent choose the new Active Pokemon.)"  FontSize="13" HorizontalAlignment="Left" TextWrapping="Wrap"/>
+            <Border Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="0" Margin="8,0,8,8">
+                <TextBlock Text="Switch out your opponent's Active Pokemon to the Bench. (Your opponent choose the new Active Pokemon.)"  FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap"/>
+            </Border>
+
+            <!--Move 2 Heading row-->
+            <Border Grid.Row="2" Grid.Column="0" Margin="1,1,1,25" Padding="5">
+                <TextBlock Text="() () ()" FontWeight="Bold" FontSize="16" HorizontalAlignment="Left" Margin="1"/>
+            </Border>
+
+            <Border Grid.Row="2" Grid.Column="1" Margin="1,1,1,25" Padding="5">
+                <TextBlock Text="Boulder Crush" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" Margin="1"/>
+            </Border>
+
+            <Border Grid.Row="2" Grid.Column="2" Margin="1,1,1,25" Padding="5">
+                <TextBlock Text="70" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.114,4.917"/>
             </Border>
         </Grid>
 
-        <!--Move 2 row -->
-        <Grid Grid.Row="4" Grid.ColumnSpan="3" Margin="6" Background="Gold">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <!--Move Name-->
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <!--Icon-->
-                <ColumnDefinition Width="*"/>
-                <!--Move Name-->
-                <ColumnDefinition Width="Auto"/>
-                <!--Damage-->
-            </Grid.ColumnDefinitions>
-
-            <!--Heading row-->
-            <Border Grid.Row="0" Grid.Column="0" Margin="2" Padding="5">
-                <TextBlock Text="() () ()" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
-            </Border>
-
-            <Border Grid.Row="0" Grid.Column="1" Margin="2" Padding="5">
-                <TextBlock Text="Boulder Crush" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
-            </Border>
-
-            <Border Grid.Row="0" Grid.Column="2" Margin="2" Padding="5">
-                <TextBlock Text="70" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
-            </Border>
-        </Grid>
-
-        <!--Weak Resist Retreat row 5-->
-        <Grid Grid.Row="5" Grid.ColumnSpan="3" Margin="6">
+        <!--Weak Resist Retreat row 4-->
+        <Grid Grid.Row="4" Grid.ColumnSpan="3" Margin="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <!--Weakness-->
@@ -150,20 +138,20 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0" BorderBrush="LightGray" BorderThickness="3" Margin="2" Padding="5">
-                <TextBlock Text="weakness () x2" FontWeight="Bold" FontSize="12"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                <TextBlock Text="weakness () x2" FontWeight="Bold" FontSize="10"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
             </Border>
 
             <Border Grid.Column="1" BorderBrush="LightGray" BorderThickness="3" Margin="2" Padding="5">
-                <TextBlock Text="resistance" FontWeight="Bold" FontSize="12"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                <TextBlock Text="resistance" FontWeight="Bold" FontSize="10"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
             </Border>
 
             <Border Grid.Column="2" BorderBrush="LightGray" BorderThickness="3" Margin="2" Padding="5">
-                <TextBlock Text="retreat () () ()" FontWeight="Bold" FontSize="12"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                <TextBlock Text="retreat () () ()" FontWeight="Bold" FontSize="10"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
             </Border>
         </Grid>
 
         <!--Buttons row 6-->
-        <Grid Grid.Row="6" Grid.ColumnSpan="3" Margin="6">
+        <Grid Grid.Row="5" Grid.ColumnSpan="3" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="85"/>
                 <!--Left Button-->
