@@ -27,6 +27,7 @@ namespace PokemonWPF
             {
                 Name = "Rhyhorn",
                 HP = "HP 100 ✊",
+                ImagePath = "C:\\Users\\grigo\\Desktop\\C#\\2. HAML\\PokemonWPF\\rhyhorn_image.png",
                 SubInfo = "NO. 0111  Spike Pokemon  HT:3'3'  WT:253.5 lbs.",
                 Attacks =
                 {
@@ -50,13 +51,13 @@ namespace PokemonWPF
                 Retreat = "retreat ⭐⭐⭐",
                 IllusAuthor = "Illus. GOSSSAN 111/165",
                 BottomInfo = "It can remember only one thing at a time. Once it starts rushing, it forgets why it started.",
-                Rarity = "Common",
             };
 
             _squirtle = new PokemonCardModel
             {
                 Name = "Squirtle",
                 HP = "HP 70 💧",
+                ImagePath = "C:\\Users\\grigo\\Desktop\\C#\\2. HAML\\PokemonWPF\\squirtle_image.jpg",
                 SubInfo = "NO. 007  Tiny Turtle Pokemon  HT:1'8'  WT:19.8 lbs.",
                 Attacks =
                 {
@@ -80,13 +81,13 @@ namespace PokemonWPF
                 Retreat = "retreat ⭐",
                 IllusAuthor = "Illus. MIKI TANAKA 63/165",
                 BottomInfo = "After birth, its back swells and hardens into a shell. It powerfully sprays foam from its mouth.",
-                Rarity = "Common",
             };
 
             _charmander = new PokemonCardModel
             {
                 Name = "Charmander",
                 HP = "HP 80 🔥",
+                ImagePath = "C:\\Users\\grigo\\Desktop\\C#\\2. HAML\\PokemonWPF\\charmander_image.jpg",
                 SubInfo = "NO. 004  Lizard Pokemon  HT:2'0'  WT:18.7 lbs.",
                 Attacks =
                 {
@@ -110,7 +111,6 @@ namespace PokemonWPF
                 Retreat = "retreat ⭐",
                 IllusAuthor = "Illus. MIKI TANAKA 46/165",
                 BottomInfo = "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
-                Rarity = "Common",
             };
             SetUpWindow(_rhyhorn);
         }
@@ -130,6 +130,7 @@ namespace PokemonWPF
         {
             NameTextBlock.Text = pokemon.Name;
             HPTextBlock.Text = pokemon.HP;
+            ImageBlock.Source = new BitmapImage(new Uri(pokemon.ImagePath));
             SubInfoTextBlock.Text = pokemon.SubInfo;
 
             Attack1IconTextBlock.Text = pokemon.Attacks[0].Icon;
