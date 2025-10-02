@@ -17,11 +17,11 @@
             <!--Image-->
             <RowDefinition Height="Auto"/>
             <!--Sub info-->
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <!--Moves-->
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <!--Weak Resist Retreat-->
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <!--Buttons-->
         </Grid.RowDefinitions>
 
