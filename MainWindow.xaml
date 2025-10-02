@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="400">
 
-    <Grid Margin="20" Background ="Orange"  >
+    <Grid Margin="20" x:Name="MainColorBlock">
 
         <!--Rows for card sections-->
         <Grid.RowDefinitions>
@@ -73,7 +73,7 @@
 
 
         <!--Moves row 3-->
-        <Grid Grid.Row="3" Grid.ColumnSpan="3" Margin="5,0,5,0" Background="Gold" VerticalAlignment="Center" >
+        <Grid x:Name="BackgroundColorBlock" Grid.Row="3" Grid.ColumnSpan="3" Margin="5,0,5,0" VerticalAlignment="Center" >
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>

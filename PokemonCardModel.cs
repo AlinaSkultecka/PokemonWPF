@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace PokemonWPF
 {
@@ -20,6 +21,8 @@ namespace PokemonWPF
         public string IllusAuthor { get; set; }
         public List<PokemonAttack> Attacks { get; set; } = new();
         public string BottomInfo { get; set; }
+        public string BackgroundColor { get; set; }
+        public string MainColor { get; set; }
 
     }
 

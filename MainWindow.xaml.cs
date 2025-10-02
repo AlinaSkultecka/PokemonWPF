@@ -51,6 +51,8 @@ namespace PokemonWPF
                 Retreat = "retreat ⭐⭐⭐",
                 IllusAuthor = "Illus. GOSSSAN 111/165",
                 BottomInfo = "It can remember only one thing at a time. Once it starts rushing, it forgets why it started.",
+                BackgroundColor = "Gold",
+                MainColor = "Orange",
             };
 
             _squirtle = new PokemonCardModel
@@ -81,6 +83,8 @@ namespace PokemonWPF
                 Retreat = "retreat ⭐",
                 IllusAuthor = "Illus. MIKI TANAKA 63/165",
                 BottomInfo = "After birth, its back swells and hardens into a shell. It powerfully sprays foam from its mouth.",
+                BackgroundColor = "#87CEEB",
+                MainColor = "Yellow",
             };
 
             _charmander = new PokemonCardModel
@@ -111,6 +115,8 @@ namespace PokemonWPF
                 Retreat = "retreat ⭐",
                 IllusAuthor = "Illus. MIKI TANAKA 46/165",
                 BottomInfo = "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
+                BackgroundColor = "#FFE4B5",
+                MainColor = "#FFA07A",
             };
             SetUpWindow(_rhyhorn);
         }
@@ -149,6 +155,9 @@ namespace PokemonWPF
             WeaknessTextBlock.Text = pokemon.Weakness;
             ResistanceTextBlock.Text = pokemon.Resistance;
             RetreatTextBlock.Text = pokemon.Retreat;
+
+            BackgroundColorBlock.Background = (SolidColorBrush)new BrushConverter().ConvertFromString(pokemon.BackgroundColor);
+            MainColorBlock.Background = (SolidColorBrush)new BrushConverter().ConvertFromString(pokemon.MainColor);
         }
 
     }
