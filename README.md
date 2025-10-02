@@ -4,8 +4,6 @@ A simple **WPF (Windows Presentation Foundation)** project that displays a Poké
 You can switch between Rhyhorn, Squirtle, and Charmander. 
 This project demonstrates how to structure and style a card interface with grids, borders, text and builded in methods (choose pokemon).
 
-
-
 ---
 
 ## Features
@@ -14,6 +12,7 @@ This project demonstrates how to structure and style a card interface with grids
 - Display **two attacks** (icon, name, damage, description)
 - Show **Weakness, Resistance, Retreat**
 - **Choose Pokémon** with a button
+- Pokémon **ElementType** is not integrated; it has been left for possible future improvement. 
 ---
 
 ## 📸 Screenshot and the original card
