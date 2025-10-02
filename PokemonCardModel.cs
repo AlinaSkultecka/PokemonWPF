@@ -20,8 +20,6 @@ namespace PokemonWPF
         public string IllusAuthor { get; set; }
         public List<PokemonAttack> Attacks { get; set; } = new();
         public string BottomInfo { get; set; }
-        public string Rarity { get; set; }
-
 
     }
 
