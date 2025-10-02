@@ -2,7 +2,7 @@
 
 A simple **WPF (Windows Presentation Foundation)** project that displays a Pokémon trading card layout using **XAML**.  
 You can switch between Rhyhorn, Squirtle, and Charmander. 
-This project demonstrates how to structure and style a card interface with grids, borders, text and builded in methods.
+This project demonstrates how to structure and style a card interface with grids, borders, text and builded in methods (choose pokemon).
 
 
 
